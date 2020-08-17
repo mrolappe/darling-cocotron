@@ -426,6 +426,8 @@ set(AppKit_sources
 
 	NSMovie.m
 	NSMovieView.m
+
+	NSStoryboard.m
 )
 
 set_source_files_properties(${AppKit_sources} LANGUAGE C)
