@@ -6,7 +6,13 @@ typedef NSString *NSStoryboardSceneIdentifier;
 typedef id _Nullable (^NSStoryboardControllerCreator)(NSCoder * _Nonnull coder);
 
 
-@interface NSStoryboard : NSObject
+@interface NSStoryboard : NSObject {
+    NSString *_storyboardPath;
+    NSString *_initialController;
+    NSDictionary *_dictIdentifier;
+    NSDictionary *_dictUUID;
+    NSNumber *_versionNumber;
+}
 
 @property(class, readonly, strong) NSStoryboard * _Nullable mainStoryboard;
 
