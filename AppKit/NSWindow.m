@@ -1313,6 +1313,11 @@ static BOOL _allowsAutomaticWindowTabbing;
     _allowsToolTipsWhenApplicationIsInactive = value;
 }
 
+- (void) setContentViewController: (NSViewController *)viewController {
+    _contentViewController = [viewController retain];
+    [self setContentView: _contentViewController.view];
+}
+
 - (BOOL) autorecalculatesContentBorderThicknessForEdge: (NSRectEdge) edge {
     NSUnimplementedMethod();
     return NO;
@@ -1425,6 +1430,10 @@ static BOOL _allowsAutomaticWindowTabbing;
 
 - (NSArray *) drawers {
     return _drawers;
+}
+
+- (NSViewController *) contentViewController {
+    return _contentViewController;
 }
 
 - (NSInteger) windowNumber {

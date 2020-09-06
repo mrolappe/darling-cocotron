@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 #import <ApplicationServices/ApplicationServices.h>
 #import <CoreGraphics/CGSubWindow.h>
 
-@class NSView, NSEvent, NSColor, NSColorSpace, NSCursor, NSImage, NSScreen,
+@class NSView, NSEvent, NSColor, NSColorSpace, NSCursor, NSImage, NSScreen, NSViewController,
         NSText, NSTextView, CGWindow, NSPasteboard, NSSheetContext,
         NSUndoManager, NSButton, NSButtonCell, NSDrawer, NSDockTile, NSToolbar,
         NSWindowAnimationContext, NSTrackingArea, NSThemeFrame,
@@ -170,6 +170,8 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
     NSView *_contentView;
     NSColor *_backgroundColor;
 
+    NSViewController *_contentViewController;
+
     id<NSWindowDelegate> _delegate;
     NSResponder *_firstResponder;
 
@@ -244,6 +246,7 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
 }
 
 @property(class) BOOL allowsAutomaticWindowTabbing;
+@property(strong) NSViewController *contentViewController;
 
 + (NSWindowDepth) defaultDepthLimit;
 
@@ -404,6 +407,7 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
 - (void) setDisplaysWhenScreenProfileChanges: (BOOL) value;
 - (void) setMovableByWindowBackground: (BOOL) value;
 - (void) setAllowsToolTipsWhenApplicationIsInactive: (BOOL) value;
+- (void) setContentViewController: (NSViewController *)viewController;
 
 - (BOOL) setFrameUsingName: (NSString *) name;
 - (BOOL) setFrameUsingName: (NSString *) name force: (BOOL) force;
@@ -422,6 +426,7 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
 
 - (id) windowController;
 - (NSArray *) drawers;
+- (NSViewController *) contentViewController;
 
 - (NSInteger) windowNumber;
 - (int) gState;
