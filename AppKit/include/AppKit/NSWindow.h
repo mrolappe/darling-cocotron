@@ -407,7 +407,6 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
 - (void) setDisplaysWhenScreenProfileChanges: (BOOL) value;
 - (void) setMovableByWindowBackground: (BOOL) value;
 - (void) setAllowsToolTipsWhenApplicationIsInactive: (BOOL) value;
-- (void) setContentViewController: (NSViewController *)viewController;
 
 - (BOOL) setFrameUsingName: (NSString *) name;
 - (BOOL) setFrameUsingName: (NSString *) name force: (BOOL) force;
@@ -426,7 +425,6 @@ APPKIT_EXPORT const NSNotificationName NSWindowDidExposeNotification;
 
 - (id) windowController;
 - (NSArray *) drawers;
-- (NSViewController *) contentViewController;
 
 - (NSInteger) windowNumber;
 - (int) gState;

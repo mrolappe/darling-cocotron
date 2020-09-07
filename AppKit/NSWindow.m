@@ -204,6 +204,8 @@ NSInteger NSBitsPerPixelFromDepth(NSWindowDepth depth) {
 
 @implementation NSWindow
 
+@synthesize contentViewController = _contentViewController;
+
 static BOOL _allowsAutomaticWindowTabbing;
 
 + (NSWindowDepth) defaultDepthLimit {
@@ -1314,8 +1316,10 @@ static BOOL _allowsAutomaticWindowTabbing;
 }
 
 - (void) setContentViewController: (NSViewController *)viewController {
-    _contentViewController = [viewController retain];
-    [self setContentView: _contentViewController.view];
+    @synchronized(self) {
+        _contentViewController = [viewController retain];
+        [self setContentView: _contentViewController.view];
+    }
 }
 
 - (BOOL) autorecalculatesContentBorderThicknessForEdge: (NSRectEdge) edge {
@@ -1430,10 +1434,6 @@ static BOOL _allowsAutomaticWindowTabbing;
 
 - (NSArray *) drawers {
     return _drawers;
-}
-
-- (NSViewController *) contentViewController {
-    return _contentViewController;
 }
 
 - (NSInteger) windowNumber {
