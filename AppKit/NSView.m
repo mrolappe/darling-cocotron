@@ -376,6 +376,7 @@ typedef struct __VFlags {
     _postsNotificationOnBoundsChange = YES;
     _autoresizesSubviews = YES;
     _autoresizingMask = NSViewNotSizable;
+    _constraints = [[NSMutableArray alloc] init];
     _tag = -1; // according to the docs - loading from a nib gets a default of
                // 0.
     _needsDisplay = YES;
