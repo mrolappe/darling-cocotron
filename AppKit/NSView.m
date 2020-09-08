@@ -70,6 +70,24 @@ const NSViewFullScreenModeOptionKey NSFullScreenModeApplicationPresentationOptio
 static BOOL NSViewLayersEnabled = NO;
 static BOOL NSShowAllViews = NO;
 
+@synthesize constraints=_constraints;
+
+- (void)addConstraint:(NSLayoutConstraint *)constraint {
+    [_constraints addObject: constraint];
+}
+
+- (void)addConstraints:(NSArray<NSLayoutConstraint *> *)constraints {
+    [_constraints addObjectsFromArray: constraints];
+}
+
+- (void)removeConstraint:(NSLayoutConstraint *)constraint {
+    [_constraints removeObject: constraint];
+}
+
+- (void)removeConstraints:(NSArray<NSLayoutConstraint *> *)constraints {
+    [_constraints removeObjectsInArray: constraints];
+}
+
 + (void) initialize {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSViewLayersEnabled = [defaults boolForKey: @"NSViewLayersEnabled"];

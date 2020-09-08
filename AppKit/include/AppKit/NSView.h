@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 #import <AppKit/NSResponder.h>
 #import <ApplicationServices/ApplicationServices.h>
 
-@class NSWindow, NSMenu, NSMenuItem, NSCursor, NSClipView, NSPasteboard,
+@class NSWindow, NSMenu, NSMenuItem, NSCursor, NSClipView, NSPasteboard, NSLayoutConstraint,
         NSTextInputContext, NSImage, NSBitmapImageRep, NSScrollView,
         NSTrackingArea, NSShadow, NSScreen, CALayer, CIFilter, CALayerContext;
 
@@ -127,7 +127,15 @@ APPKIT_EXPORT const NSViewFullScreenModeOptionKey NSFullScreenModeApplicationPre
 
     CALayerContext *_layerContext;
     id __remove;
+
+    NSMutableArray<NSLayoutConstraint *> *_constraints;
 }
+
+@property(readonly, copy) NSArray<NSLayoutConstraint *> *constraints;
+- (void)addConstraint:(NSLayoutConstraint *)constraint;
+- (void)addConstraints:(NSArray<NSLayoutConstraint *> *)constraints;
+- (void)removeConstraint:(NSLayoutConstraint *)constraint;
+- (void)removeConstraints:(NSArray<NSLayoutConstraint *> *)constraints;
 
 + (NSView *) focusView;
 + (NSMenu *) defaultMenu;
