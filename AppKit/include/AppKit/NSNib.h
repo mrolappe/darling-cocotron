@@ -20,6 +20,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 #import <AppKit/AppKitExport.h>
 #import <Foundation/NSObject.h>
 
+typedef NSString *NSNibName;
+
 @class NSURL, NSBundle, NSDictionary, NSArray, NSData, NSMutableArray;
 
 APPKIT_EXPORT NSString *const NSNibOwner;

@@ -5,6 +5,11 @@
 
 @implementation NSViewController
 
+@synthesize view = _view;
+@synthesize nibBundle = _nibBundle;
+@synthesize nibName = _nibName;
+@synthesize title = _title;
+
 - initWithNibName: (NSString *) name bundle: (NSBundle *) bundle {
     _nibName = [name copy];
     _nibBundle = [bundle retain];
@@ -24,23 +29,11 @@
     return self;
 }
 
-- (NSString *) nibName {
-    return _nibName;
-}
-
-- (NSBundle *) nibBundle {
-    return _nibBundle;
-}
-
 - (NSView *) view {
     if (_view == nil)
         [self loadView];
 
     return _view;
-}
-
-- (NSString *) title {
-    return _title;
 }
 
 - representedObject {
@@ -51,18 +44,6 @@
     object = [object retain];
     [_representedObject release];
     _representedObject = object;
-}
-
-- (void) setTitle: (NSString *) value {
-    value = [value retain];
-    [_title release];
-    _title = value;
-}
-
-- (void) setView: (NSView *) value {
-    value = [value retain];
-    [_view release];
-    _view = value;
 }
 
 - (void) loadView {

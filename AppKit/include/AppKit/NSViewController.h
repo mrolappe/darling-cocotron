@@ -1,4 +1,5 @@
 #import <AppKit/NSResponder.h>
+#import <AppKit/NSNib.h>
 
 @class NSView;
 
@@ -10,20 +11,16 @@
     NSView *_view;
 }
 
+@property(strong) IBOutlet NSView *view;
+@property(strong, readonly) NSBundle *nibBundle;
+@property(copy, readonly) NSNibName nibName;
+@property(copy) NSString *title;
+
 - initWithNibName: (NSString *) name bundle: (NSBundle *) bundle;
 
-- (NSString *) nibName;
-- (NSBundle *) nibBundle;
-
-- (NSView *) view;
-- (NSString *) title;
 - representedObject;
 
 - (void) setRepresentedObject: object;
-
-- (void) setTitle: (NSString *) value;
-
-- (void) setView: (NSView *) value;
 
 - (void) loadView;
 
