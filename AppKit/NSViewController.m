@@ -90,6 +90,10 @@
     [bundle loadNibFile: path externalNameTable: nameTable withZone: NULL];
 }
 
+- (void) viewDidLoad {
+    // the default implementation does nothing.
+}
+
 - (void) discardEditing {
     NSUnimplementedMethod();
 }

@@ -27,6 +27,8 @@
 
 - (void) loadView;
 
+- (void) viewDidLoad;
+
 - (void) discardEditing;
 
 - (BOOL) commitEditing;
