@@ -1319,6 +1319,7 @@ static BOOL _allowsAutomaticWindowTabbing;
     @synchronized(self) {
         _contentViewController = [viewController retain];
         [self setContentView: _contentViewController.view];
+        [_contentViewController viewDidLoad];
     }
 }
 

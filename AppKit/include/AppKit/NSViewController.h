@@ -25,6 +25,12 @@
 - (void) loadView;
 
 - (void) viewDidLoad;
+@property(readonly, getter=isViewLoaded) BOOL viewLoaded;
+- (BOOL) isViewLoaded;
+- (void) viewWillAppear;
+- (void) viewDidAppear;
+- (void) viewWillDisappear;
+- (void) viewDidDisappear;
 
 - (void) discardEditing;
 

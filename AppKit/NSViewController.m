@@ -75,6 +75,26 @@
     // the default implementation does nothing.
 }
 
+- (BOOL) isViewLoaded {
+    return _view != nil;
+}
+
+- (void) viewWillAppear {
+    // the default implementation does nothing.
+}
+
+- (void) viewDidAppear {
+    // the default implementation does nothing.
+}
+
+- (void) viewWillDisappear {
+    // the default implementation does nothing.
+}
+
+- (void) viewDidDisappear {
+    // the default implementation does nothing.
+}
+
 - (void) discardEditing {
     NSUnimplementedMethod();
 }
