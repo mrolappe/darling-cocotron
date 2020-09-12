@@ -2160,6 +2160,7 @@ static BOOL _allowsAutomaticWindowTabbing;
 
     switch (place) {
     case NSWindowAbove:
+        [_contentViewController viewWillAppear];
         [self update];
         _isVisible = YES;
         [[self platformWindow] placeAboveWindow: relativeTo];
@@ -2175,9 +2176,11 @@ static BOOL _allowsAutomaticWindowTabbing;
             ![self isExcludedFromWindowsMenu]) {
             [NSApp changeWindowsItem: self title: _title filename: NO];
         }
+        [_contentViewController viewDidAppear];
         break;
 
     case NSWindowBelow:
+        [_contentViewController viewWillAppear];
         [self update];
         _isVisible = YES;
         [[self platformWindow] placeBelowWindow: relativeTo];
@@ -2193,14 +2196,17 @@ static BOOL _allowsAutomaticWindowTabbing;
             ![self isExcludedFromWindowsMenu]) {
             [NSApp changeWindowsItem: self title: _title filename: NO];
         }
+        [_contentViewController viewDidAppear];
         break;
 
     case NSWindowOut:
+        [_contentViewController viewWillDisappear];
         _isVisible = NO;
         [[self platformWindow] hideWindow];
         if (![self isKindOfClass: [NSPanel class]]) {
             [NSApp removeWindowsItem: self];
         }
+        [_contentViewController viewDidDisappear];
         break;
     }
 
@@ -2649,7 +2655,9 @@ static BOOL _allowsAutomaticWindowTabbing;
 }
 
 - (void) miniaturize: (id) sender {
+    [_contentViewController viewWillDisappear];
     [[self platformWindow] miniaturize];
+    [_contentViewController viewDidDisappear];
 }
 
 - (void) deminiaturize: (id) sender {
