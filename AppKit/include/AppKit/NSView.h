@@ -129,7 +129,10 @@ APPKIT_EXPORT const NSViewFullScreenModeOptionKey NSFullScreenModeApplicationPre
     id __remove;
 
     NSMutableArray<NSLayoutConstraint *> *_constraints;
+    BOOL _translatesAutoresizingMaskIntoConstraints;
 }
+
+@property BOOL translatesAutoresizingMaskIntoConstraints;
 
 @property(readonly, copy) NSArray<NSLayoutConstraint *> *constraints;
 - (void)addConstraint:(NSLayoutConstraint *)constraint;

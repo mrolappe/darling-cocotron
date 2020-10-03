@@ -71,6 +71,7 @@ static BOOL NSViewLayersEnabled = NO;
 static BOOL NSShowAllViews = NO;
 
 @synthesize constraints=_constraints;
+@synthesize translatesAutoresizingMaskIntoConstraints=_translatesAutoresizingMaskIntoConstraints;
 
 - (void)addConstraint:(NSLayoutConstraint *)constraint {
     [_constraints addObject: constraint];
