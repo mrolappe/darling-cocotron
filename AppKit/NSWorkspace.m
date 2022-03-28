@@ -62,6 +62,13 @@ const NSNotificationName
         NSWorkspaceAccessibilityDisplayOptionsDidChangeNotification =
                 @"NSWorkspaceAccessibilityDisplayOptionsDidChangeNotification";
 
+const NSNotificationName NSWorkspaceDidMountNotification = @"NSWorkspaceDidMountNotification";
+
+const NSNotificationName NSWorkspaceWillUnmountNotification = @"NSWorkspaceWillUnmountNotification";
+const NSNotificationName NSWorkspaceDidUnmountNotification = @"NSWorkspaceDidUnmountNotification";
+
+const NSNotificationName NSWorkspaceDidActivateApplicationNotification = @"NSWorkspaceDidActivateApplicationNotification";
+
 @implementation NSWorkspace
 
 + (NSWorkspace *) sharedWorkspace {
