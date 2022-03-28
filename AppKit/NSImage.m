@@ -109,6 +109,8 @@ NSImageName const NSImageNameTouchBarPauseTemplate = @"NSTouchBarPauseTemplate";
 NSImageName const NSImageNameTouchBarPlayTemplate = @"NSTouchBarPlayTemplate";
 NSImageName const NSImageNameTouchBarRecordStopTemplate =
         @"NSTouchBarRecordStopTemplate";
+NSImageName const NSImageNameTouchBarColorPickerFill = @"NSTouchBarColorPickerFill";
+NSImageName const NSImageNameTouchBarGoDownTemplate = @"NSTouchBarGoDownTemplate";
 
 NSImageHintKey const NSImageHintInterpolation = @"NSImageHintInterpolation";
 

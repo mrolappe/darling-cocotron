@@ -229,5 +229,7 @@ APPKIT_EXPORT NSImageName const NSImageNameTouchBarDeleteTemplate;
 APPKIT_EXPORT NSImageName const NSImageNameTouchBarPauseTemplate;
 APPKIT_EXPORT NSImageName const NSImageNameTouchBarPlayTemplate;
 APPKIT_EXPORT NSImageName const NSImageNameTouchBarRecordStopTemplate;
+APPKIT_EXPORT NSImageName const NSImageNameTouchBarColorPickerFill;
+APPKIT_EXPORT NSImageName const NSImageNameTouchBarGoDownTemplate;
 
 APPKIT_EXPORT NSImageHintKey const NSImageHintInterpolation;
