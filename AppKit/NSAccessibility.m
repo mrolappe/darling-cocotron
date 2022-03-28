@@ -546,6 +546,8 @@ NSString *const NSAccessibilitySelectedChildrenMovedNotification =
 NSString *const NSAccessibilityErrorCodeExceptionInfo =
         @"NSAccessibilityErrorCodeExceptionInfo";
 
+NSString *const NSAccessibilityAnnouncementRequestedNotification = @"AXAnnouncementRequested";
+
 /* The above constants are probably all wrong */
 /* The one below is right */
 NSString *const NSAccessibilityActivationPointAttribute = @"AXActivationPoint";
