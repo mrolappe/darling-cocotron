@@ -28,6 +28,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 #import <AppKit/NSWindow.h>
 #import <Foundation/NSKeyedArchiver.h>
 
+const NSNotificationName NSPreferredScrollerStyleDidChangeNotification = @"NSPreferredScrollerStyleDidChangeNotification";
+
 @implementation NSScroller
 
 + (CGFloat) scrollerWidth {
