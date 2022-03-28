@@ -36,6 +36,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 #import <Foundation/NSLocale.h>
 #import <Foundation/NSNumberFormatter.h>
 
+APPKIT_EXPORT NSNotificationName NSControlTintDidChangeNotification = @"NSControlTintDidChangeNotification";
+
 @implementation NSCell
 
 #pragma mark -
