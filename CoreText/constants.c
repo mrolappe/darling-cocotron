@@ -58,3 +58,5 @@ const CFStringRef kCTFontEnabledAttribute = CFSTR("NSFontEnabledAttribute");
 const CFStringRef kCTFontWeightTrait = CFSTR("NSCTFontWeightTrait");
 const CFStringRef kCTFontWidthTrait = CFSTR("NSCTFontWidthTrait");
 const CFStringRef kCTFontSlantTrait = CFSTR("NSCTFontSlantTrait");
+const CFStringRef kCTFontSubFamilyNameKey = CFSTR("kCTFontSubFamilyNameKey");
+const CFStringRef kCTFontCollectionRemoveDuplicatesOption = CFSTR("kCTFontCollectionRemoveDuplicatesOption");
