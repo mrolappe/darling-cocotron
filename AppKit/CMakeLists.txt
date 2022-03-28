@@ -437,6 +437,7 @@ set(AppKit_sources
 	NSCollectionViewLayoutInvalidationContext.m
 	NSLayoutGuide.m
 	NSPressGestureRecognizer.m
+	rlp.m
 )
 
 set_source_files_properties(${AppKit_sources} LANGUAGE C)
