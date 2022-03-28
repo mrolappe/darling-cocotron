@@ -29,6 +29,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 const NSNotificationName NSMenuDidEndTrackingNotification =
         @"NSMenuDidEndTrackingNotification";
 
+const NSNotificationName NSMenuDidBeginTrackingNotification = @"NSMenuDidEndTrackingNotification";
+
 @implementation NSMenu
 
 + (void) popUpContextMenu: (NSMenu *) menu
