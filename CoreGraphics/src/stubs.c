@@ -94,3 +94,13 @@ CGWindowLevel CGShieldingWindowLevel(void) {
         puts("STUB: CGShieldingWindowLevel called");
     return 0;
 }
+
+typedef uint64_t CGEventFlags;
+typedef struct __CGEvent *CGEventRef;
+
+CGEventFlags CGEventGetFlags(CGEventRef event) {
+    if (verbose) {
+        puts("STUB: CGEventGetFlags called");
+    }
+    return 0;
+}
