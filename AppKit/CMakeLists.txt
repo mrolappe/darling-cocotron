@@ -90,6 +90,7 @@ set(AppKit_sources
 	NSButtonCell.m
 	NSLevelIndicatorCell.m
 	NSPDFImageRep.m
+	NSPICTImageRep.m
 	NSScroller.m
 	NSCustomImageRep.m
 	NSClipView.m
@@ -438,6 +439,9 @@ set(AppKit_sources
 	NSLayoutGuide.m
 	NSPressGestureRecognizer.m
 	rlp.m
+	NSDataAsset.m
+	NSScrubber.m
+	NSMenuItemCell.m
 )
 
 set_source_files_properties(${AppKit_sources} LANGUAGE C)
