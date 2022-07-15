@@ -16,3 +16,13 @@ const NSAccessibilityNotificationUserInfoKey NSAccessibilityAnnouncementKey = @"
 typedef NSString *NSBindingOption;
 
 NSBindingOption NSConditionallySetsHiddenBindingOption = @"NSConditionallySetsHiddenBindingOption";
+
+
+typedef NSString *NSPrintInfoAttributeKey;
+
+const NSPrintInfoAttributeKey NSPrintJobSavingURL = @"NSJobSavingURL";
+
+
+typedef NSString *NSBindingName;
+
+const NSBindingName NSSelectionIndexPathsBinding = @"selectionIndexPaths";
