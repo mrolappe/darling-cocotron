@@ -30,6 +30,7 @@ const NSNotificationName NSMenuDidEndTrackingNotification =
         @"NSMenuDidEndTrackingNotification";
 
 const NSNotificationName NSMenuDidBeginTrackingNotification = @"NSMenuDidEndTrackingNotification";
+const NSNotificationName NSMenuWillSendActionNotification = @"NSMenuWillSendActionNotification";
 
 @implementation NSMenu
 
