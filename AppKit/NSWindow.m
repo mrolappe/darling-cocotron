@@ -104,6 +104,10 @@ const NSNotificationName NSWindowWillExitFullScreenNotification =
         @"NSWindowWillExitFullScreenNotification";
 const NSNotificationName NSWindowDidExposeNotification =
         @"NSWindowDidExposeNotification";
+const NSNotificationName NSWindowDidChangeBackingPropertiesNotification =
+        @"NSWindowDidChangeBackingPropertiesNotification";
+
+NSString *const NSBackingPropertyOldScaleFactorKey = @"NSBackingPropertyOldScaleFactorKey";
 
 NSInteger NSBitsPerPixelFromDepth(NSWindowDepth depth) {
     switch (depth) {
