@@ -44,6 +44,7 @@ set(CoreData_sources
     NSMergeConflict.m
     NSMergePolicy.m
     NSPersistentContainer.m
+	rlp.m
 )
 
 set_source_files_properties(${CoreData_sources} LANGUAGE C)
