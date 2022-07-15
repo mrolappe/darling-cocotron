@@ -111,7 +111,7 @@ NSImageName const NSImageNameTouchBarRecordStopTemplate =
         @"NSTouchBarRecordStopTemplate";
 NSImageName const NSImageNameTouchBarColorPickerFill = @"NSTouchBarColorPickerFill";
 NSImageName const NSImageNameTouchBarGoDownTemplate = @"NSTouchBarGoDownTemplate";
-
+NSImageName const NSImageNameTouchBarGoUpTemplate = @"NSTouchBarGoUpTemplate";
 NSImageHintKey const NSImageHintInterpolation = @"NSImageHintInterpolation";
 
 // Private class used so the context knows the flipped status of a locked image
