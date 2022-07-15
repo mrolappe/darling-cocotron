@@ -35,6 +35,8 @@ NSNotificationName NSFontSetChangedNotification =
 NSNotificationName NSAntialiasThresholdChangedNotification =
         @"NSAntialiasThresholdChangedNotification";
 
+const CGFloat NSFontIdentityMatrix[] = { 1, 0, 0, 1, 0, 0 };
+
 FOUNDATION_EXPORT char *NSUnicodeToSymbol(const unichar *characters,
                                           NSUInteger length, BOOL lossy,
                                           NSUInteger *resultLength,
