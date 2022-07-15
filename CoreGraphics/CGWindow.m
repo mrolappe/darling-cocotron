@@ -24,6 +24,8 @@ const CFStringRef kCGWindowBounds = CFSTR("kCGWindowBounds");
 const CFStringRef kCGWindowLayer = CFSTR("kCGWindowLayer");
 const CFStringRef kCGWindowOwnerPID = CFSTR("kCGWindowOwnerPID");
 const CFStringRef kCGWindowNumber = CFSTR("kCGWindowNumber");
+const CFStringRef kCGWindowName = CFSTR("kCGWindowName");
+const CFStringRef kCGWindowOwnerName = CFSTR("kCGWindowOwnerName");
 
 @implementation CGWindow
 

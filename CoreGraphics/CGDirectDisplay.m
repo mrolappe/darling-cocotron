@@ -30,6 +30,7 @@ unsigned int kCGDisplayPixelHeight = kCGDisplayHeight;
 unsigned int kCGDisplayPixelWidth = kCGDisplayWidth;
 
 const CFStringRef kCGDisplayProductNameKey = CFSTR("kCGDisplayProductNameKey");
+const CFStringRef kCGDisplayShowDuplicateLowResolutionModes = CFSTR("kCGDisplayResolution");
 
 CGError CGCaptureAllDisplays(void) {
     return kCGErrorSuccess;
