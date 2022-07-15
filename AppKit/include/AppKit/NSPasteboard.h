@@ -36,6 +36,7 @@ APPKIT_EXPORT const NSPasteboardType NSPasteboardTypeTabularText;
 APPKIT_EXPORT const NSPasteboardType NSPasteboardTypeFont;
 APPKIT_EXPORT const NSPasteboardType NSPasteboardTypeRuler;
 APPKIT_EXPORT const NSPasteboardType NSPasteboardTypeColor;
+APPKIT_EXPORT const NSPasteboardType NSPasteboardTypeFileURL;
 
 // Old Pasteboard Types
 APPKIT_EXPORT const NSPasteboardType NSColorPboardType;

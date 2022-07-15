@@ -32,6 +32,7 @@ const NSPasteboardType NSPasteboardTypeTabularText = @"NSTabularTextPboardType";
 const NSPasteboardType NSPasteboardTypeFont = @"NSFontPboardType";
 const NSPasteboardType NSPasteboardTypeRuler = @"NSRulerPboardType";
 const NSPasteboardType NSPasteboardTypeColor = @"NSColorPboardType";
+const NSPasteboardType NSPasteboardTypeFileURL = @"public.file-url";
 
 const NSPasteboardType NSColorPboardType = @"NSColorPboardType";
 const NSPasteboardType NSFileContentsPboardType = @"NSFileContentsPboardType";
@@ -49,11 +50,12 @@ const NSPasteboardType NSTIFFPboardType = @"NSTIFFPboardType";
 const NSPasteboardType NSURLPboardType = @"NSURLPboardType";
 const NSPasteboardType NSHTMLPboardType = @"Apple HTML pasteboard type";
 const NSPasteboardType NSVCardPboardType = @"NSVCardPboardType";
+const NSPasteboardType NSInkTextPboardType = @"Apple InkText pasteboard type";   // deprecated in 10.14
+const NSPasteboardType NSMultipleTextSelectionPboardType = @"Apple multiple text selection pasteboard type";   // deprecated in 10.14
 
 const NSPasteboardType NSFilesPromisePboardType =
         @"Apple files promise pasteboard type";
 
-const NSPasteboardName NSPasteboardNameDrag = @"Apple CFPasteboard drag";
 NSString *const NSPasteboardURLReadingFileURLsOnlyKey =
         @"NSPasteboardURLReadingFileURLsOnlyKey";
 
@@ -64,6 +66,10 @@ const NSPasteboardName NSGeneralPboard = @"NSGeneralPboard";
 const NSPasteboardName NSRulerPboard = @"NSRulerPboard";
 
 const NSPasteboardName NSPasteboardNameGeneral = @"Apple CFPasteboard general";
+const NSPasteboardName NSPasteboardNameFont = @"Apple CFPasteboard font";
+const NSPasteboardName NSPasteboardNameRuler = @"Apple CFPasteboard ruler";
+const NSPasteboardName NSPasteboardNameFind = @"Apple CFPasteboard find";
+const NSPasteboardName NSPasteboardNameDrag = @"Apple CFPasteboard drag";
 
 const NSPasteboardReadingOptionKey
         NSPasteboardURLReadingContentsConformToTypesKey =
