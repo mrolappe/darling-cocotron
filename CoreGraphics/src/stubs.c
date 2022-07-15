@@ -20,6 +20,8 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreGraphics/CGDirectDisplay.h>
 #include <CoreGraphics/CGGeometry.h>
+#include <CoreGraphics/CGDisplayConfiguration.h>
+
 #include <stdio.h>
 
 typedef float CGGammaValue;
@@ -102,5 +104,26 @@ CGEventFlags CGEventGetFlags(CGEventRef event) {
     if (verbose) {
         puts("STUB: CGEventGetFlags called");
     }
+
     return 0;
+}
+
+
+typedef void (*CGDisplayReconfigurationCallBack)(CGDirectDisplayID display, CGDisplayChangeSummaryFlags flags, void *userInfo);
+
+CGError CGDisplayRegisterReconfigurationCallback(CGDisplayReconfigurationCallBack callback, void *userInfo) {
+    if (verbose) {
+        puts("STUB: CGDisplayRegisterReconfigurationCallback called");
+    }
+
+    return kCGErrorNotImplemented;
+}
+
+
+CGError CGDisplayRemoveReconfigurationCallback(CGDisplayReconfigurationCallBack callback, void *userInfo) {
+    if (verbose) {
+        puts("STUB: CGDisplayRemoveReconfigurationCallback called");
+    }
+
+    return kCGErrorNotImplemented;
 }
