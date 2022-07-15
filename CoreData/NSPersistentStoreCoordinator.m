@@ -34,6 +34,8 @@ NSString *const NSBinaryStoreType = @"Binary";
 NSString *const NSMigratePersistentStoresAutomaticallyOption =
         @"NSMigratePersistentStoresAutomaticallyOption";
 
+NSString *const NSSQLiteManualVacuumOption = @"NSSQLiteManualVacuumOption";
+
 NSString *const NSPersistentStoreCoordinatorStoresDidChangeNotification =
         @"NSPersistentStoreCoordinatorStoresDidChangeNotification";
 NSString *const NSAddedPersistentStoresKey = @"NSAddedPersistentStoresKey";
